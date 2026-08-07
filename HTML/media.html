@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Media in HTML</h1>
+
+    <H2>Audio</H2>
+    <audio src="../MEDIA/Audio.mp3" controls autoplay loop muted></audio>
+    <audio src="../MEDIA/Audio.mp3" controls preload="auto"></audio>
+    <audio src="../MEDIA/Audio.mp3" controls preload="metadata"></audio>
+    <audio src="../MEDIA/Audio.mp3" controls preload="none"></audio>
+
+    <H2>Video</H2>
+    <video src="../MEDIA/Video.mp4" controls width="600px"  poster="../IMAGE/horsey.png"></video>
+    <video src="../MEDIA/Video.mp4" controls width="600px" loop muted preload="none"></video>
+    <video src="../MEDIA/Video.mp4" controls width="600px" loop muted preload="metadata"></video>
+    <video src="../MEDIA/Video.mp4" controls width="600px" loop muted preload="auto"></video>
+
+    <H2>iFrame</H2>
+    <h3>Youtube video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/WylqLGwFbAI?si=n6q6n0GoG4T97VdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h3>Google map</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1236.7122425343778!2d85.33458446900116!3d27.705274541899442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb199fb72bf271%3A0xa088a27c32a7da21!2sSwacon%20International%20Hospital!5e1!3m2!1sen!2snp!4v1786073536558!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <h3>Website</h3>
+    <iframe src="https://www.lbef.org/" frameborder="0" width="500px" height="500px"></iframe>
+    
+    <!-- 
+    controls - gives control option like play, pause, volume
+    autoplay - autoplay the media when loaded
+    loop - repeates the media
+    muted - media is muted by default
+
+    preload:                   [same in audio and video both]
+    auto - loads all the file info when site is loaded.
+    metadata - loads only file info like name, author, size. not the exaact media file until and unless media is played.
+    none - loads nothing, until and unless media is played. 
+     -->
+</body>
+</html>
