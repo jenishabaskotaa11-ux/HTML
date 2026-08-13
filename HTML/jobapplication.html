@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobApplicationForm</title>
+</head>
+
+<body>
+    <h1>Job Application Form</h1>
+    <br>
+    <form action="submit.php" method="post">
+        <h2>Personal Information</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="John Doe" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" required>
+        <br>
+        <label for="contact">Contact</label>
+        <input type="number" name="contact" id="contact" value="contact" placeholder="+9779818057815" required>
+        <br><br>
+        <label for="Gender">Gender</label>
+        <br>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="Male" value="Male"><br>
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="Female"><br>
+        <label for="Others">Others</label>
+        <input type="radio" name="gender" id="Others" value="Others"><br>
+        <br>
+        <label for="Province">Province</label>
+        <select name="Province" id="Province">
+            <option value="" disabled selected>ProvinceName</option>
+            <option value="Koshi">Koshi</option>
+            <option value="Madesh">Madesh</option>
+            <option value="Bagmati">Bagmati</option>
+            <option value="Gandaki">Gandaki</option>
+            <option value="Lumbini">Lumbini</option>
+            <option value="Karnali">Karnali</option>
+            <option value="Sudurpaschim">Sudurpaschim</option>
+        </select>
+        <BR></BR>
+        <hr>
+        <h2>Skills</h2>
+        <label for="Skills"></label>
+        <label for="HTML">HTML</label>
+        <input type="checkbox" name="Skills" id="HTML" value="HTML"><br>
+        <label for="CSS">CSS</label>
+        <input type="checkbox" name="Skills" id="CSS" value="CSS"><br>
+        <label for="JS">JS</label>
+        <input type="checkbox" name="Skills" id="JS" value="JS"><br>
+        <label for="SQL">SQL</label>
+        <input type="checkbox" name="Skills" id="SQL" value="SQL"><br>
+        <label for="Network">Network</label>
+        <input type="checkbox" name="Skills" id="Netwrok" value="Network"><br>
+        <label for="Cybersecurity">Cybersecurity</label>
+        <input type="checkbox" name="Skills" id="Cybersecurity" value="Cybersecurity"><br>
+        <label for="Python">Python</label>
+        <input type="checkbox" name="Skills" id="Python" value="Python">
+        <br>
+        <hr>
+        <h2>Documents</h2>
+        <label for="Coverletter">CoverLetter</label>
+        <br>
+        <textarea name="Coverletter" id="Coverletter" value="coverletter" placeholder="Type here.." required></textarea>
+        <br><br>
+        <label for="CV">CV</label><br>
+        <input type="file" name="CV" id="CV" accept=".pdf" required>
+        <br><br>
+        <hr>
+        <h2>Education Level</h2>
+        <label for="Education">Select Level of your Education</label>
+        <select name="" id="Education" required>
+            <br>
+            <option value="" disabled selected>Qualification</option>
+            <option value="10">SEE</option>
+            <option value="12">10+2</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="Masters">Masters</option>
+        </select>
+        <br><br>
+        <hr>
+        <h2>Work Experience</h2>
+        <label for="Organization">Organization</label>
+        <input type="text" name="Organization" id="Organization" placeholder="abc corporate">
+        <br><br>
+        <label for="Experience">Years of experience</label>
+        <select name="Experience" id="Experience">
+            <br>
+            <option value="" disabled selected>NumberOfYears</option>
+            <option value="1year">1year</option>
+            <option value="2years">2years</option>
+            <option value="3years">3years</option>
+        </select><br>
+        <hr>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
