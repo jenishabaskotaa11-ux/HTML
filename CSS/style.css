@@ -1,0 +1,21 @@
+/* in css.html style p tag. background color - navy-blue, color - white */
+p{
+    background-color: navy;
+    color:white;
+}
+
+/* create an animal.html file to write about your favourite animal. Use h1 for heading, p for description, use h2 title for special feature and listout them in list.
+style for tem.
+for h1 - use inline css
+for description - use internal css
+for list elements and h2 - use external css.
+ */
+
+h2{
+    background-color: aqua;
+    color:blue;
+}
+ol{
+    background-color: chartreuse;
+    color:brown;
+}

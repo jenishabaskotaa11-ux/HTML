@@ -1,0 +1,26 @@
+/* link with selector.html */
+
+/* universal selector */
+*{
+    background-color: green;
+    color:white;
+}
+
+/* element selector */
+h2{
+    background-color: black;
+    color:white;
+}
+
+/* id selector */
+#unique{
+    background-color: brown;
+    color:white;
+}
+
+/* class selector */
+.common{
+    background-color: yellow;
+    color:black;
+}
+

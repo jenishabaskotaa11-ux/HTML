@@ -1,0 +1,12 @@
+1. Navigation menu
+2. hero section 
+3. content and details section 
+4. cta buttons 
+5. blog section 
+6. news article section 
+7. branding and logo section 
+8. footer section 
+
+
+one -
+cafe, isp, gold store, mart, cosmetics
