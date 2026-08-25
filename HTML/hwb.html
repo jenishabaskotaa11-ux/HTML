@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer {
+            width: 200px;
+            height: 200px;
+            /* border:size style color */
+            border: 1px solid black;
+        }
+
+        #rem {
+            width: 5rem;
+            height: 5rem;
+            background-color: black;
+        }
+
+        #parent {
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            font-size: 20px;
+        }
+
+        #child {
+            height: 5em;
+            width: 5em;
+            background-color: blue;
+            border: 1px solid white;
+        }
+
+        #viewport {
+            width: 50vw;
+            height: 50vh;
+            background-color: orange;
+        }
+
+        #container{
+            height: 70%;
+            width: 70%;
+            border: 1px solid black;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Height, Weight and Border in CSS</h1>
+    <div id="outer" style="background-color: palevioletred; color:aliceblue">
+        <p>Jenisha Baskota</p>
+    </div>
+    <hr>
+
+    <h1>Unit in CSS</h1>
+    <h2>Absolute Unit</h2>
+    <!-- fixed unit. Eg. pixels, imch, mm, cm, m, feet -->
+
+    <h2>Relative Unit</h2>
+    <!-- unit that doesnt have fixed size. Eg. rem, em, vh, vw, %
+
+    rem- reference font size of root/ default font size.
+    em- reference font size of parent element.
+    vh- viewport height means screen height. 100vh means 100% height of the screen.
+    vw- viewport width means screen width. 100vw means 100% width of the screen.
+    %- reference size of the parent element -->
+
+    <p>rem</p>
+    <div id="rem">
+
+    </div>
+
+    <hr>
+
+    <p>em</p>
+
+    <div id="parent">
+        <div id="child">
+
+        </div>
+    </div>
+    <p>vh and vw</p>
+    <div id="viewport">
+
+    </div>
+    <br>
+    <div id="container">
+
+    </div>
+</body>
+
+</html>
