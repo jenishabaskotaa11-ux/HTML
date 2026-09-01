@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* display */
+        .display {
+            background-color: green;
+        }
+
+        span {
+            background-color: red;
+        }
+
+        /* border radius */
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin: 20px;
+        }
+        .square{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+            margin:20px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Display in CSS</h1>
+    <!-- 
+    block level element - cover a whole space(appears on new line) Eg. <h1> - <h6>, <p>, <div>, <hr>, <br>, etc.
+    inline element - appears in the single line. Eg. <b>, <i>, <u>, <img>, <span>, etc.
+     -->
+
+    <h3>Inline</h3>
+    <!-- no change in height and width -->
+    <p class="display" style="display: inline;">
+        <span>Messi</span>
+        <span>Ronaldo</span>
+        <span>Neymar</span>
+    </p>
+
+    <h3>Inline-Block</h3>
+    <!-- inline tag maa height width change grna mildaina. Inline-block le ni tei kaam garne ho but height ra width set garna milxa -->
+    <p class="display" style="display: inline-block; width:500px; height:400px">
+        <span>Tendulkar</span>
+        <span>Kohli</span>
+        <span>Dhoni</span>
+    </p>
+
+    <h3>Block</h3>
+    <p class="display">
+        <span style="display:block">USA</span>
+        <span>Russia</span>
+        <span>China</span>
+    </p>
+
+    <h3>None</h3>
+    <p class="display" style="display: none;">
+        <span>SRK</span>
+        <span>Salman</span>
+        <span>Aamir</span>
+    </p>
+    <!-- 
+    inline-block - similar to inline but we can give width and height property.
+    none - hides the element from the web page.
+    -->
+    <hr>
+
+    <h3>Border-Radius</h3>
+    <!-- with increasing border radius edge round bandai janxa -->
+
+    <div class="box" style="border-radius: 10px;"></div>
+    <div class="box" style="border-radius: 30px;"></div>
+    <div class="box" style="border-radius: 50px;"></div>
+    <!-- make a square shape into circular -->
+    <!-- imp for viva -->
+
+    <div class="box" style="border-radius: 100px;"></div>
+    <div class="box" style="border-radius: 50%;"></div>
+
+    <!-- make 5 box with width 400px and height 400px, background-color blue.
+     in 5 boxes, give different border-radius value. Eg. 0% , 10% , 20% , 40% , 50%.  -->
+    <div class="square" style="border-radius: 0%;"></div>
+    <div class="square" style="border-radius: 10%;"></div>
+    <div class="square" style="border-radius: 20%;"></div>
+    <div class="square" style="border-radius: 40%;"></div>
+    <div class="square" style="border-radius: 50%;"></div>
+</body>
+
+</html>
