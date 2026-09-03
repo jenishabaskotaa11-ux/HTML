@@ -1,0 +1,57 @@
+/* flexbox day-1 */
+.parent {
+    height: 500px;
+    width: 800px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+#column {
+    flex-direction: column;
+}
+
+#row-reverse {
+    flex-direction: row-reverse;
+}
+
+#column-reverse {
+    flex-direction: column-reverse;
+}
+
+#space-evenly {
+    justify-content: space-evenly;
+}
+
+#space-between {
+    justify-content: space-between;
+}
+
+#space-around {
+    justify-content: space-around;
+}
+
+#right {
+    justify-content: right;
+}
+
+#centre {
+    justify-content: center;
+}
+
+#start {
+    align-items: start;
+}
+
+#end {
+    align-items: end;
+}
+
+#flexcentre {
+    align-items: center;
+}
