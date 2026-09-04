@@ -1,0 +1,47 @@
+/* Flexbox Day-2 */
+.parent {
+    display: flex;
+    height: 400px;
+    width: 500px;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.child {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+/* Flex Wrap
+it wraps the items inside the container. if the total size of all items is greater than container size, then items appear in new line in same dimension.
+syntax: wrap, wrap-reverse, no-wrap
+
+align-content: used to manage alignment of items arranged in multiple line. in case of flex-wrap, align-content is used instead of align-items.
+*/
+
+.container {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    /* flex-wrap: wrap;
+    align-content: center; */
+    align-items:center ;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black
+}
+
+#shelf-second {
+    align-self: flex-start;
+}
+
+#shelf-third {
+    align-self: flex-end;
+}
