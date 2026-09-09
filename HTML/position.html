@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        #relative {
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+
+        #absolute {
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+
+        /* absolute */
+        .parent {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            position: absolute;
+            top: 50px;
+            left: 70px;
+        }
+
+        /* fixed */
+        #fixed {
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        /* sticky */
+        #sticky{
+            position:sticky;
+            top:200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position</h1>
+    <!-- 
+    position: 
+    syntax:
+    position: relative/ absolute/ fixed/ sticky/ static
+    
+    relative: relative to original position
+    absolute: relative to parent position
+    fixed: fixed position
+    sticky: movable until it reach fixwd position offset
+    static: position offset cannot be used. (default position)
+
+    position-offset: left/ right/ top/ bottom
+    -->
+
+    <p>Relative</p>
+    <div class="container" id="relative">
+        Relative
+    </div>
+
+    <p>Absolute</p>
+    <div class="container" id="absolute">
+        Absolute
+    </div>
+    <!-- another example-->
+    <div class="parent">
+        <div class="child">Absolute</div>
+    </div>
+
+    <p>Fixed</p>
+    <div class="container" id="fixed">
+        Fixed
+    </div>
+
+    <p>Sticky</p>
+    <div class="container" id="sticky">
+        Sticky
+    </div>
+
+    <p>Static</p>
+    <div class="container" id="sticky">
+        Sticky
+    </div>
+</body>
+
+</html>
