@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes colorChange {
+            from {
+                background-color: color;
+            }
+
+            to {
+                background-color: blue;
+            }
+        }
+
+        @keyframes moveBox{
+            0%{
+                left:0;
+                right:0;
+                bottom:0;
+                top:0;
+                background-color: aqua;
+            }
+            25%{
+                top:0;
+                bottom:0;
+                right:0;
+                left:200px;
+                background-color: black;
+            }
+            50%{
+                left:200px;
+                top:200px;
+                bottom:0;
+                right:0;
+                background-color: brown;
+            }
+            75%{
+                left:0px;
+                top:200px;
+                bottom:0;
+                right:0;
+                background-color: chartreuse;
+            }
+            100%{
+                left:0;
+                top:0;
+                bottom:0;
+                right:0;
+                background-color: crimson;
+            }
+        }
+
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            /* animation */
+            animation: colorChange 5s ease-in 0s 3;
+        }
+
+        .box{
+            width:100px;
+            height:100px;
+            background-color: red;
+            position:relative;
+            animation: moveBox 10s ease-in-out 0s 5;
+        }
+
+        /* syntax: 
+        @keyframe animationName{
+        from{
+        css property
+        }
+        to{
+        css property
+        }
+        }
+
+        css selector{
+        animation: animationName duration timingfunction delay iteration;
+        }
+        */
+
+        /* for multiple state */
+        /* 
+        @keyframes animationName{
+        0%{
+        css property
+        }
+        50%{
+        css property
+        }
+        100%{
+        css property
+        }
+        } */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Animation</h1>
+    <div class="container">
+
+
+    </div>
+    <p>Individual Frame</p>
+    <div class="box">
+
+    </div>
+
+
+
+</body>
+
+</html>
