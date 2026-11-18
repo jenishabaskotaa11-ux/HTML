@@ -66,4 +66,3 @@ console.log("for in loop");
 for(const moviekey in movie){
     console.log(moviekey,movie[moviekey]);
 }
-
