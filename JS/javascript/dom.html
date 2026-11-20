@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Fruit</h1>
+    <ul>
+        <li>Apple</li>
+        <li>Mango</li>
+    </ul>
+    <h2>thank god its friday</h2>
+    <button>Click Me</button>
+    <script>
+        // js code
+
+        // 1. by id
+        // 2. by classname
+        // 3. by tagsname
+        // 4. by queryselector :selects the first css selector
+
+        // modify text:
+        // i. innerHTML
+        // ii. innerText
+        // iii. textContent
+
+        const heading1 = document.querySelector("h1");
+        console.log(heading1);
+        heading1.textContent = "fruitlist";
+        heading1.style.color="red"
+
+        // modify h2 tag and put text "monday is busy for me"
+        const heading2 = document.querySelector("h2");
+        console.log(heading2);
+        heading2.textContent = "monday is busy for me";
+        heading2.style.color="blue"
+
+        // select multiple css selector
+        const fruitlist=document.querySelectorAll("li");
+        console.log(fruitlist);
+        // first nodelist item
+        console.log(fruitlist[0]);
+        // change second nodelist item
+        fruitlist[1].textContent="Grapes";
+        // create new li in nodellist
+        const newli=document.createElement("li");
+        newli.textContent="avocado"
+        const uList=document.querySelector("ul")
+        uList.appendChild(newli);
+
+        // add "dragon fruit" in new li.
+        // const newli=document.createElement("li");
+        // newli.textContent="dragon fruit"
+        // const ulist=document.querySelector("ul")
+        // ulist.appendChild(newli);
+        // this one is incorrect..........................................try again
+
+        // button and addEventListner()
+        const button=document.querySelector("button");
+        button.addEventListener("click",()=>{
+            console.log("button is clicked");
+        });
+    </script>
+</body>
+
+</html>
+<!--  html                                  ->ROOT
+       l
+    head    body                            ->siblings
+      l       l
+    title   h1  ul                          ->child   
+     -->
